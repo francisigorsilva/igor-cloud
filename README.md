@@ -2,21 +2,20 @@
 
 Personal cloud storage platform built with Next.js and Cloudflare R2.
 
-> 🚧 **In Development** — This project is under active construction.
+> 🚧 **Em Desenvolvimento**
 
 ## Overview
 
-A personal cloud storage solution focused on simplicity and control, using Cloudflare R2 for object storage.
+Solução pessoal de armazenamento em nuvem focada em simplicidade e controle, utilizando Cloudflare R2.
 
 ## Tech Stack
 
 - Next.js
 - Cloudflare R2
-- TypeScript (planned)
 
 ## Status
 
-This repository currently contains the initial structure. Core features are still being developed.
+Repositório em estágio inicial. Funcionalidades principais ainda estão sendo desenvolvidas.
 
 ## License
 
