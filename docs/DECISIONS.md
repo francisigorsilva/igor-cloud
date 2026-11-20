@@ -26,7 +26,7 @@ For each decision, add an entry with:
 |---|---|---|---|
 | — | No decisions formally recorded | — | — |
 
-Current research reference (not an accepted decision):\n\n- [Technical research and provider comparison](TECHNICAL_RESEARCH.md) — database, authentication and object storage options; research snapshot 2026-11-20.\n\nPotential topics to evaluate (not decisions):
+Current research reference (not an accepted decision):\n\n- [Technical research and provider comparison](TECHNICAL_RESEARCH.md) — database, authentication and object storage options; research snapshot 2026-11-20.\n- [Product requirements](REQUIREMENTS.md) — proposed functional/non-functional requirements and MVP boundaries; not yet approved.\n\nPotential topics to evaluate (not decisions):
 
 - Metadata database selection.
 - Authentication and session management.
@@ -56,7 +56,7 @@ Para cada decisão, adicione um registro contendo:
 |---|---|---|---|
 | — | Nenhuma decisão formalmente registrada | — | — |
 
-Referência de pesquisa atual (não representa decisão aceita):\n\n- [Pesquisa técnica e comparação de provedores](TECHNICAL_RESEARCH.md) — opções de banco de dados, autenticação e armazenamento de objetos; pesquisa em 20/11/2026.\n\nTemas que poderão ser avaliados (não são decisões):
+Referência de pesquisa atual (não representa decisão aceita):\n\n- [Pesquisa técnica e comparação de provedores](TECHNICAL_RESEARCH.md) — opções de banco de dados, autenticação e armazenamento de objetos; pesquisa em 20/11/2026.\n- [Requisitos do produto](REQUIREMENTS.md) — requisitos funcionais/não funcionais e limites propostos para o MVP; ainda não aprovados.\n\nTemas que poderão ser avaliados (não são decisões):
 
 - Escolha do banco de dados dos metadados.
 - Autenticação e gerenciamento de sessões.
