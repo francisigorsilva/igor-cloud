@@ -3,7 +3,7 @@
 
 **Personal cloud storage platform focused on simple file management and controlled access.**
 
-[![Status](https://img.shields.io/badge/status-in%20development-8B5CF6?style=for-the-badge)](#project-status)
+[![Status](https://img.shields.io/badge/status-in%20development-8B5CF6?style=for-the-badge)](#development-status)
 
 > A personal project exploring the foundations of a cloud storage application, with an emphasis on file organization, storage architecture and access control.
 
