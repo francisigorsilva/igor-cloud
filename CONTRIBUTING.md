@@ -32,3 +32,35 @@ Igor Cloud is in an early documentation and planning stage. The application is n
 ## Language
 
 Issues and documentation may be written in English or Portuguese.
+
+
+---
+
+## Português
+
+Obrigado pelo interesse em contribuir com o Igor Cloud.
+
+### Antes de começar
+
+- Leia o [README](README.md) e as [notas de arquitetura](docs/ARCHITECTURE.md).
+- Verifique o escopo atual: o projeto ainda está em planejamento e documentação.
+- Não descreva funcionalidades planejadas como se já estivessem implementadas.
+
+### Diretrizes para contribuições
+
+- Mantenha as alterações pequenas, claras e focadas.
+- Explique o problema que a alteração resolve.
+- Atualize a documentação quando uma decisão ou comportamento mudar.
+- Não inclua credenciais, tokens, arquivos privados ou dados pessoais.
+- Prefira nomes e estruturas consistentes e fáceis de manter.
+- Informe explicitamente quando algo for apenas uma proposta ou protótipo.
+
+### Relatando problemas
+
+Ao abrir uma issue, descreva o contexto, o resultado esperado e o resultado observado. Inclua passos para reproduzir quando aplicável e remova informações sensíveis de logs e capturas de tela.
+
+### Pull requests
+
+Descreva o objetivo, as alterações realizadas, os testes executados e eventuais limitações. Como ainda não existe uma aplicação executável, não invente resultados de testes; indique quando a validação não se aplicar.
+
+Toda contribuição permanece sujeita à revisão e à compatibilidade com os objetivos do projeto.
