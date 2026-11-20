@@ -1,11 +1,11 @@
-
 # Igor Cloud
 
-**Personal cloud storage platform focused on simple file management and controlled access.**
+**A personal cloud storage project focused on file organization, controlled access and a clear engineering foundation.**
 
-[![Status](https://img.shields.io/badge/status-in%20development-8B5CF6?style=for-the-badge)](#development-status)
+[![Status](https://img.shields.io/badge/status-early%20development-8B5CF6?style=for-the-badge)](#development-status)
+[![License: MIT](https://img.shields.io/badge/license-MIT-2563EB?style=for-the-badge)](LICENSE)
 
-> A personal project exploring the foundations of a cloud storage application, with an emphasis on file organization, storage architecture and access control.
+> Building a personal space for files — with deliberate architecture, incremental delivery and transparent documentation.
 
 [English](#english) · [Português](#português)
 
@@ -15,58 +15,93 @@
 
 ### Overview
 
-Igor Cloud is a personal cloud storage project intended to provide a straightforward way to store, organize and access files.
+Igor Cloud is a personal project exploring the foundations of a cloud file storage application. Its intended purpose is to let an individual store, organize and access files through a straightforward interface.
 
-The project is being developed as a learning and engineering initiative. Its current repository is at an early stage; the application is not yet a finished or production-ready service.
+This repository is currently in the documentation and planning stage. It does **not** contain a working storage service, and it is not ready for production use.
 
-### Project Goals
+### Project Objectives
 
-- Build a foundation for a personal file storage application.
-- Explore object storage integration using Cloudflare R2.
-- Design an organized approach to file management.
-- Plan secure, controlled access to stored content.
-- Evolve the application incrementally, documenting technical decisions.
+- Establish a maintainable foundation for a personal cloud storage application.
+- Explore object storage through Cloudflare R2.
+- Design clear file organization and metadata management.
+- Plan authentication and authorization before exposing stored content.
+- Build incrementally, validating each capability before documenting it as complete.
 
-### Technology Stack
+### Planned Technology Direction
 
-| Technology | Intended role | Status |
+| Technology | Intended responsibility | Status |
 |---|---|---|
 | Next.js | Application framework and user interface | Planned |
-| Cloudflare R2 | Object storage for uploaded files | Planned |
+| Cloudflare R2 | Object storage for file content | Planned |
 
-The technologies above describe the intended direction of the project. Their integration and implementation will be documented as they are completed.
+These are intended technology choices, not implemented integrations. The stack may be refined as technical decisions are validated.
 
-### Current Scope
+### Scope and Feature Status
 
-At this stage, the repository contains the initial project documentation. Core application features are still under development.
-
-No upload, download, authentication or file-management functionality is claimed as implemented yet.
-
-### Roadmap
-
-- [x] Create the project repository.
-- [x] Define the initial project direction and technology choices.
-- [x] Document the project scope and development status.
-- [ ] Establish the application structure.
-- [ ] Build the initial interface.
-- [ ] Design the file and metadata management flow.
-- [ ] Integrate Cloudflare R2.
-- [ ] Implement authentication and access control.
-- [ ] Add upload, download and file organization features.
-- [ ] Add validation, error handling and tests.
-- [ ] Prepare deployment documentation.
+| Capability | Current status |
+|---|---|
+| Initial project documentation | Available |
+| Application scaffold and interface | Not implemented |
+| User authentication | Not implemented |
+| File upload and download | Not implemented |
+| File organization and metadata | Not implemented |
+| Cloudflare R2 integration | Not implemented |
+| Access control | Not implemented |
+| Automated tests and deployment | Not implemented |
 
 ### Architecture Direction
 
-The initial architectural direction is to use Next.js for the application layer and Cloudflare R2 for object storage.
+The initial direction separates the application layer from binary object storage:
 
-A detailed architecture, data model and request flow will be documented after the application structure and integration decisions have been implemented.
+1. **Application layer:** Next.js will provide the user-facing application and server-side application logic.
+2. **Object storage:** Cloudflare R2 is the planned destination for file objects.
+3. **Metadata layer:** file names, object keys, ownership and other metadata will require a structured data model. The database choice is still open.
+4. **Access layer:** authentication and authorization must be designed before private files can be accessed.
+5. **Validation and observability:** input validation, error handling, logging and tests will be introduced as the application takes shape.
+
+No production architecture or security guarantees are claimed at this stage. See [the architecture notes](docs/ARCHITECTURE.md) for the current design direction and open decisions.
+
+### Security Principles
+
+Security is a design requirement, not a feature to add at the end. The project intends to follow these principles:
+
+- Keep credentials and secrets out of source control.
+- Validate file metadata and uploads on the server.
+- Enforce authorization on every operation involving private files.
+- Avoid exposing storage credentials or unrestricted object access to the client.
+- Define file size and type limits before enabling uploads.
+- Document security-relevant decisions and known limitations.
+
+These are project principles; they should not be interpreted as implemented controls. For reporting a vulnerability, read [SECURITY.md](SECURITY.md).
+
+### Roadmap
+
+- [x] Create the public repository.
+- [x] Define the initial project direction and intended technology choices.
+- [x] Document scope, status and initial architecture direction.
+- [x] Add contribution and security guidance.
+- [ ] Choose and document the metadata database.
+- [ ] Establish the application scaffold.
+- [ ] Build the initial interface.
+- [ ] Design the file and metadata model.
+- [ ] Integrate Cloudflare R2.
+- [ ] Implement authentication and authorization.
+- [ ] Implement upload, download and file organization.
+- [ ] Add validation, error handling, logging and automated tests.
+- [ ] Prepare deployment and operational documentation.
 
 ### Development Status
 
-Igor Cloud is an active work in progress and is not ready for production use.
+**Early development — documentation and planning.**
 
-Setup instructions, environment variables and execution commands will be added when the application scaffold and required configuration are available.
+There is no installation or local run command yet because the application scaffold has not been created. Setup instructions will be added once there is runnable application code.
+
+### Project Documentation
+
+- [Architecture notes](docs/ARCHITECTURE.md)
+- [Contribution guide](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
+- [License](LICENSE)
 
 ---
 
@@ -74,70 +109,106 @@ Setup instructions, environment variables and execution commands will be added w
 
 ### Visão Geral
 
-O Igor Cloud é um projeto pessoal de armazenamento em nuvem, pensado para oferecer uma maneira simples de armazenar, organizar e acessar arquivos.
+Igor Cloud é um projeto pessoal que explora os fundamentos de uma aplicação de armazenamento de arquivos em nuvem. A proposta é permitir que uma pessoa armazene, organize e acesse seus arquivos por meio de uma interface simples.
 
-O projeto também funciona como um ambiente de aprendizado e desenvolvimento de engenharia de software. O repositório ainda está em estágio inicial; a aplicação não é apresentada como um serviço finalizado ou pronto para produção.
+Atualmente, este repositório está na etapa de documentação e planejamento. Ele **ainda não contém um serviço funcional de armazenamento** e não está pronto para uso em produção.
 
-### Objetivos do Projeto
+### Objetivos
 
-- Construir uma base organizada para uma aplicação pessoal de armazenamento de arquivos.
-- Explorar a integração com armazenamento de objetos por meio do Cloudflare R2.
-- Desenvolver uma abordagem estruturada para o gerenciamento de arquivos.
-- Planejar o controle adequado de acesso aos conteúdos armazenados.
-- Evoluir a aplicação gradualmente, documentando as decisões técnicas.
+- Estabelecer uma base sustentável para uma aplicação pessoal de armazenamento em nuvem.
+- Explorar o armazenamento de objetos por meio do Cloudflare R2.
+- Projetar uma organização clara de arquivos e metadados.
+- Planejar autenticação e autorização antes de disponibilizar o acesso aos arquivos.
+- Desenvolver gradualmente, validando cada capacidade antes de documentá-la como concluída.
 
-### Tecnologias
+### Direção Tecnológica Planejada
 
-| Tecnologia | Finalidade prevista | Situação |
+| Tecnologia | Responsabilidade prevista | Situação |
 |---|---|---|
 | Next.js | Framework da aplicação e interface | Planejado |
-| Cloudflare R2 | Armazenamento de objetos e arquivos | Planejado |
+| Cloudflare R2 | Armazenamento dos arquivos | Planejado |
 
-As tecnologias acima representam a direção inicialmente definida para o projeto. A integração e a implementação serão documentadas conforme forem concluídas.
+Essas tecnologias representam escolhas iniciais, não integrações já implementadas. A stack poderá ser refinada conforme as decisões técnicas forem validadas.
 
-### Escopo Atual
+### Escopo e Situação das Funcionalidades
 
-Neste momento, o repositório contém a documentação inicial e a definição da direção do projeto. As funcionalidades principais da aplicação ainda estão em desenvolvimento.
-
-Ainda não são declaradas como implementadas funcionalidades de envio, download, autenticação ou gerenciamento de arquivos.
-
-### Planejamento de Desenvolvimento
-
-- [x] Criar o repositório do projeto.
-- [x] Definir a proposta inicial e as tecnologias pretendidas.
-- [x] Documentar o escopo e o estado atual.
-- [ ] Estabelecer a estrutura da aplicação.
-- [ ] Desenvolver a interface inicial.
-- [ ] Projetar o gerenciamento de arquivos e metadados.
-- [ ] Integrar o Cloudflare R2.
-- [ ] Implementar autenticação e controle de acesso.
-- [ ] Adicionar envio, download e organização de arquivos.
-- [ ] Implementar validações, tratamento de erros e testes.
-- [ ] Preparar a documentação de implantação.
+| Capacidade | Situação atual |
+|---|---|
+| Documentação inicial do projeto | Disponível |
+| Estrutura da aplicação e interface | Não implementadas |
+| Autenticação de usuários | Não implementada |
+| Envio e download de arquivos | Não implementados |
+| Organização de arquivos e metadados | Não implementada |
+| Integração com Cloudflare R2 | Não implementada |
+| Controle de acesso | Não implementado |
+| Testes automatizados e implantação | Não implementados |
 
 ### Direção da Arquitetura
 
-A direção inicial prevê o Next.js na camada da aplicação e o Cloudflare R2 como serviço de armazenamento de objetos.
+A proposta inicial separa a camada da aplicação do armazenamento dos arquivos:
 
-A arquitetura detalhada, o modelo de dados e o fluxo de requisições serão documentados depois que a estrutura da aplicação e as decisões de integração forem implementadas.
+1. **Camada da aplicação:** o Next.js deverá fornecer a interface e a lógica da aplicação no servidor.
+2. **Armazenamento de objetos:** o Cloudflare R2 é a opção planejada para guardar os arquivos.
+3. **Camada de metadados:** nomes, chaves dos objetos, propriedade e demais informações exigirão um modelo de dados estruturado. A escolha do banco de dados permanece em aberto.
+4. **Camada de acesso:** autenticação e autorização deverão ser projetadas antes que arquivos privados possam ser acessados.
+5. **Validação e observabilidade:** validação de entradas, tratamento de erros, registros e testes serão introduzidos conforme a aplicação evoluir.
+
+Neste estágio, não há uma arquitetura de produção nem garantias de segurança implementadas. Consulte as [notas de arquitetura](docs/ARCHITECTURE.md) para conhecer a direção atual e as decisões pendentes.
+
+### Princípios de Segurança
+
+Segurança é um requisito de projeto, não uma funcionalidade para ser adicionada no final. O projeto pretende seguir estes princípios:
+
+- Manter credenciais e segredos fora do controle de versão.
+- Validar metadados e arquivos enviados no servidor.
+- Exigir autorização em todas as operações envolvendo arquivos privados.
+- Não expor credenciais de armazenamento nem acesso irrestrito aos objetos no cliente.
+- Definir limites de tamanho e tipo antes de habilitar envios.
+- Documentar decisões relevantes para a segurança e limitações conhecidas.
+
+Esses pontos são princípios planejados; não devem ser interpretados como controles já implementados. Para comunicar uma vulnerabilidade, consulte [SECURITY.md](SECURITY.md).
+
+### Planejamento
+
+- [x] Criar o repositório público.
+- [x] Definir a proposta inicial e as tecnologias pretendidas.
+- [x] Documentar escopo, situação e direção inicial da arquitetura.
+- [x] Adicionar orientações de contribuição e segurança.
+- [ ] Escolher e documentar o banco de dados dos metadados.
+- [ ] Estabelecer a estrutura da aplicação.
+- [ ] Desenvolver a interface inicial.
+- [ ] Projetar o modelo de arquivos e metadados.
+- [ ] Integrar o Cloudflare R2.
+- [ ] Implementar autenticação e autorização.
+- [ ] Implementar envio, download e organização de arquivos.
+- [ ] Adicionar validação, tratamento de erros, logs e testes automatizados.
+- [ ] Preparar a documentação de implantação e operação.
 
 ### Estado do Desenvolvimento
 
-O Igor Cloud está em desenvolvimento e ainda não está pronto para uso em produção.
+**Estágio inicial — documentação e planejamento.**
 
-As instruções de instalação, variáveis de ambiente e comandos de execução serão adicionados quando a estrutura da aplicação e suas configurações necessárias estiverem disponíveis.
+Ainda não existem comandos de instalação ou execução local porque a estrutura da aplicação não foi criada. As instruções serão adicionadas quando houver código executável.
+
+### Documentação do Projeto
+
+- [Notas de arquitetura](docs/ARCHITECTURE.md)
+- [Guia de contribuição](CONTRIBUTING.md)
+- [Política de segurança](SECURITY.md)
+- [Licença](LICENSE)
 
 ---
 
-## Project Principles
+## Project Principles · Princípios do Projeto
 
-- **Clarity:** keep the scope and implementation status explicit.
-- **Incremental Development:** build and validate the project in manageable stages.
-- **Maintainability:** favor organized and understandable technical decisions.
-- **Responsible Documentation:** document implemented behavior accurately.
+- **Clarity · Clareza:** communicate scope and implementation status honestly.
+- **Incremental delivery · Evolução gradual:** build and validate in manageable stages.
+- **Maintainability · Manutenibilidade:** prefer understandable, documented technical decisions.
+- **Security by design · Segurança desde o projeto:** consider access control and data protection from the beginning.
+- **Honest documentation · Documentação responsável:** never describe planned behavior as implemented.
 
 ---
 
 ## License
 
-MIT License.
+This project is licensed under the [MIT License](LICENSE).
