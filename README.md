@@ -1,6 +1,10 @@
-# Igor Cloud
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:080B14,45:21143A,100:6D28D9&height=170&section=header&text=IGOR%20CLOUD&fontSize=46&fontColor=FFFFFF&fontAlignY=42&desc=PERSONAL%20CLOUD%20STORAGE%20PROJECT&descSize=13&descAlignY=68&animation=fadeIn" />
 
 **A personal cloud storage project focused on file organization, controlled access and a clear engineering foundation.**
+
+</div>
 
 [![Status](https://img.shields.io/badge/status-early%20development-8B5CF6?style=for-the-badge)](#development-status)
 [![License: MIT](https://img.shields.io/badge/license-MIT-2563EB?style=for-the-badge)](LICENSE)
@@ -212,3 +216,9 @@ Ainda não existem comandos de instalação ou execução local porque a estrutu
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+<div align="center">
+
+[Back to GitHub Profile · Voltar ao Perfil](https://github.com/francisigorsilva)
+
+</div>
