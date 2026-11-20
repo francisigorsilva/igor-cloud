@@ -84,7 +84,7 @@ These are project principles; they should not be interpreted as implemented cont
 - [x] Define the initial project direction and intended technology choices.
 - [x] Document scope, status and initial architecture direction.
 - [x] Add contribution and security guidance.
-- [x] Publish an initial technical comparison of database, authentication and object-storage options.\n- [x] Draft bilingual product requirements and an initial MVP boundary for review.\n- [ ] Validate finalists with a small proof of concept and choose the metadata database.
+- [x] Publish an initial technical comparison of database, authentication and object-storage options.\n- [x] Draft bilingual product requirements and an initial MVP boundary for review.\n- [x] Document a preliminary threat model and security verification scenarios.\n- [ ] Validate finalists with a small proof of concept and choose the metadata database.
 - [ ] Establish the application scaffold.
 - [ ] Build the initial interface.
 - [ ] Design the file and metadata model.
@@ -103,7 +103,7 @@ There is no installation or local run command yet because the application scaffo
 ### Project Documentation
 
 - [Architecture notes](docs/ARCHITECTURE.md)
-- [Architecture decision log](docs/DECISIONS.md)\n- [Technical research and provider comparison](docs/TECHNICAL_RESEARCH.md)\n- [Product requirements and proposed MVP scope](docs/REQUIREMENTS.md)
+- [Architecture decision log](docs/DECISIONS.md)\n- [Technical research and provider comparison](docs/TECHNICAL_RESEARCH.md)\n- [Product requirements and proposed MVP scope](docs/REQUIREMENTS.md)\n- [Preliminary threat model](docs/THREAT_MODEL.md)
 - [Contribution guide](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
 - [Issue and pull request templates](.github/)
@@ -199,7 +199,7 @@ Ainda não existem comandos de instalação ou execução local porque a estrutu
 ### Documentação do Projeto
 
 - [Notas de arquitetura](docs/ARCHITECTURE.md)
-- [Registro de decisões arquiteturais](docs/DECISIONS.md)\n- [Pesquisa técnica e comparação de provedores](docs/TECHNICAL_RESEARCH.md)\n- [Requisitos do produto e escopo proposto do MVP](docs/REQUIREMENTS.md)
+- [Registro de decisões arquiteturais](docs/DECISIONS.md)\n- [Pesquisa técnica e comparação de provedores](docs/TECHNICAL_RESEARCH.md)\n- [Requisitos do produto e escopo proposto do MVP](docs/REQUIREMENTS.md)\n- [Modelo preliminar de ameaças](docs/THREAT_MODEL.md)
 - [Guia de contribuição](CONTRIBUTING.md)
 - [Política de segurança](SECURITY.md)
 - [Modelos de issues e pull requests](.github/)
