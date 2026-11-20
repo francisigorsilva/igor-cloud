@@ -6,7 +6,7 @@
 
 </div>
 
-[![Status](https://img.shields.io/badge/status-early%20development-8B5CF6?style=for-the-badge)](#development-status)
+[![Status](https://img.shields.io/badge/status-documentation%20%26%20planning-8B5CF6?style=for-the-badge)](#development-status)
 [![License: MIT](https://img.shields.io/badge/license-MIT-2563EB?style=for-the-badge)](LICENSE)
 
 > Building a personal space for files — with deliberate architecture, incremental delivery and transparent documentation.
@@ -84,7 +84,10 @@ These are project principles; they should not be interpreted as implemented cont
 - [x] Define the initial project direction and intended technology choices.
 - [x] Document scope, status and initial architecture direction.
 - [x] Add contribution and security guidance.
-- [x] Publish an initial technical comparison of database, authentication and object-storage options.\n- [x] Draft bilingual product requirements and an initial MVP boundary for review.\n- [x] Document a preliminary threat model and security verification scenarios.\n- [ ] Validate finalists with a small proof of concept and choose the metadata database.
+- [x] Publish an initial technical comparison of database, authentication and object-storage options.
+- [x] Draft bilingual product requirements and an initial MVP boundary for review.
+- [x] Document a preliminary threat model and security verification scenarios.
+- [ ] Validate finalists with a small proof of concept and choose the metadata database.
 - [ ] Establish the application scaffold.
 - [ ] Build the initial interface.
 - [ ] Design the file and metadata model.
@@ -103,7 +106,10 @@ There is no installation or local run command yet because the application scaffo
 ### Project Documentation
 
 - [Architecture notes](docs/ARCHITECTURE.md)
-- [Architecture decision log](docs/DECISIONS.md)\n- [Technical research and provider comparison](docs/TECHNICAL_RESEARCH.md)\n- [Product requirements and proposed MVP scope](docs/REQUIREMENTS.md)\n- [Preliminary threat model](docs/THREAT_MODEL.md)
+- [Architecture decision log](docs/DECISIONS.md)
+- [Technical research and provider comparison](docs/TECHNICAL_RESEARCH.md)
+- [Product requirements and proposed MVP scope](docs/REQUIREMENTS.md)
+- [Preliminary threat model](docs/THREAT_MODEL.md)
 - [Contribution guide](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
 - [Issue and pull request templates](.github/)
@@ -180,6 +186,9 @@ Esses pontos são princípios planejados; não devem ser interpretados como cont
 - [x] Definir a proposta inicial e as tecnologias pretendidas.
 - [x] Documentar escopo, situação e direção inicial da arquitetura.
 - [x] Adicionar orientações de contribuição e segurança.
+- [x] Publicar pesquisa técnica inicial sobre banco de dados, autenticação e armazenamento de objetos.
+- [x] Elaborar requisitos bilíngues e delimitar uma proposta inicial de MVP.
+- [x] Documentar um modelo preliminar de ameaças e cenários de verificação de segurança.
 - [ ] Escolher e documentar o banco de dados dos metadados.
 - [ ] Estabelecer a estrutura da aplicação.
 - [ ] Desenvolver a interface inicial.
@@ -199,7 +208,10 @@ Ainda não existem comandos de instalação ou execução local porque a estrutu
 ### Documentação do Projeto
 
 - [Notas de arquitetura](docs/ARCHITECTURE.md)
-- [Registro de decisões arquiteturais](docs/DECISIONS.md)\n- [Pesquisa técnica e comparação de provedores](docs/TECHNICAL_RESEARCH.md)\n- [Requisitos do produto e escopo proposto do MVP](docs/REQUIREMENTS.md)\n- [Modelo preliminar de ameaças](docs/THREAT_MODEL.md)
+- [Registro de decisões arquiteturais](docs/DECISIONS.md)
+- [Pesquisa técnica e comparação de provedores](docs/TECHNICAL_RESEARCH.md)
+- [Requisitos do produto e escopo proposto do MVP](docs/REQUIREMENTS.md)
+- [Modelo preliminar de ameaças](docs/THREAT_MODEL.md)
 - [Guia de contribuição](CONTRIBUTING.md)
 - [Política de segurança](SECURITY.md)
 - [Modelos de issues e pull requests](.github/)
