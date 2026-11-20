@@ -103,8 +103,10 @@ There is no installation or local run command yet because the application scaffo
 ### Project Documentation
 
 - [Architecture notes](docs/ARCHITECTURE.md)
+- [Architecture decision log](docs/DECISIONS.md)
 - [Contribution guide](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)
+- [Issue and pull request templates](.github/)
 - [License](LICENSE)
 
 ---
@@ -197,8 +199,10 @@ Ainda não existem comandos de instalação ou execução local porque a estrutu
 ### Documentação do Projeto
 
 - [Notas de arquitetura](docs/ARCHITECTURE.md)
+- [Registro de decisões arquiteturais](docs/DECISIONS.md)
 - [Guia de contribuição](CONTRIBUTING.md)
 - [Política de segurança](SECURITY.md)
+- [Modelos de issues e pull requests](.github/)
 - [Licença](LICENSE)
 
 ---
