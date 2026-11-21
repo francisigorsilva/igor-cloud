@@ -1,0 +1,34 @@
+{
+  "name": "igor-cloud",
+  "version": "1.0.0",
+  "description": "Personal cloud storage platform built with Next.js and Cloudflare R2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francisigorsilva/igor-cloud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/francisigorsilva/igor-cloud/issues"
+  },
+  "homepage": "https://github.com/francisigorsilva/igor-cloud#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1168.0",
+    "@aws-sdk/s3-request-presigner": "^3.1168.0",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.119.0",
+    "highlight.js": "^11.12.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "server-only": "^0.0.1"
+  }
+}
